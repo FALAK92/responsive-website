@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav-item a {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: 15px;
+  transition: all 0.4s;
+}
+.nav-item a:hover {
+  color: rgb(20, 219, 20);
+}
+
+.navbar-brand {
+  width: 100px;
+}
+.search {
+  height: 40px;
+  outline: none;
+  border: 2px solid rgb(20, 219, 20);
+  background-color: transparent;
+  border-radius: 20px 0px 0px 20px;
+  border-right: none;
+}
+.search:focus {
+  outline: none;
+  box-shadow: none;
+  border: 2px solid rgb(20, 219, 20);
+  border-right: none;
+}
+.btn1 {
+  height: 40px;
+  outline: none;
+  border: none;
+  background-color: rgb(20, 219, 20);
+  color: white;
+  border-radius: 0px 20px 20px 0px;
+  transition: all 0.4s;
+}
+.btn1:hover {
+  background-color: rgb(13, 239, 13);
+}
+.bi.bi-bag-plus {
+  font-size: 25px;
+  cursor: pointer;
+  color: rgb(30, 112, 30);
+  padding-top: 5px;
+  transition: all 0.4s;
+}
+.bi.bi-bag-plus:hover {
+  color: rgb(20, 219, 20);
+}
+
+.content-body {
+  background-image: url("./Assets/main.jpg");
+  background-repeat: no-repeat;
+  background-position: cover;
+  height: 100vh;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  padding: 140px 160px 0 160px;
+  background-color: rgb(209, 190, 190);
+}
+
+.content-body .h6 {
+  font-size: 12px;
+  color: rgb(20, 219, 20);
+}
+.content-body .h1 {
+  display: flex;
+}
+
+.content-body .h1 .green-line {
+  padding: 0 11px 12px 0;
+  border-bottom: 3px solid rgb(20, 219, 20);
+}
+
+.content-body p {
+  font-size: 16px;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-body .btn {
+  border: 1px solid;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 12px;
+}
+
+.content-body .btn.btn-primary {
+  background-color: rgb(20, 219, 20);
+  color: white;
+}
+.content-body .btn.btn-primary:hover {
+  background-color: rgb(232, 138, 31);
+  color: black;
+  border-color: black;
+}
+
+.content-body .btn.btn-secondary {
+  background-color: white;
+  color: rgb(20, 219, 20);
+  border-color: rgb(20, 219, 20);
+}
+
+.content-body .btn.btn-secondary:hover {
+  background-color: rgb(232, 138, 31);
+  color: black;
+  border-color: black;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  background-color: rgb(20, 219, 20);
+  color: white;
+  position: absolute;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+  .content-body {
+    padding: 40px 20px 0 20px;
+  }
+
+  .content-body p {
+    font-size: 18px;
+    text-align: justify;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
